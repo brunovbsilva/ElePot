@@ -1,0 +1,37 @@
+.model D1N5818	D( Is=2.835u Rs=47.12m Ikf=.3227 N=1 Xti=0 Eg=1.11 Cjo=359.3p 
++ M=.6513 Vj=.75 Fc=.5 Isr=26.46u Nr=2) 
+*		Motorola	pid=1N5817	case=59-04
+*		88-09-12 rmn
+.model D1N5404	D(Is=11.5f Rs=8.254m Ikf=3.87 N=1 Xti=3 Eg=1.11 Cjo=130.4p 
++ 	                M=.3758 Vj=.75 Fc=.5 Isr=47.19u Nr=2)
+*$ 
+.model IRF740	NMOS( Level=3 Gamma=0 Delta=0 Eta=0 Theta=0 Kappa=0.2 Vmax=0 
++ Xj=0 Tox=100n Uo=600 Phi=.6 Rs=8.563m Kp=20.59u W=.78 L=2u Vto=3.657 
++ Rd=.3915 Rds=1.778MEG Cbd=1.419n Pb=.8 Mj=.5 Fc=.5 Cgso=1.392n Cgdo=146.6p 
++ Rg=.9088 Is=17.65p N=1 Tt=570n) 
+*$
+*.model TIP74A	ako:NSC_5A	PNP()	; case TO-220 (s)
+.MODEL TIP74A	   PNP(Is=66.19f Xti=3 Eg=1.11 Vaf=100 Bf=137.6 Ise=862.2f
++   Ne=1.481 Ikf=1.642 Nk=.5695 Xtb=2 Br=5.88 Isc=273.5f Nc=1.24
++   Ikr=3.555 Rc=79.39m Cjc=870.4p Mjc=.6481 Vjc=.75 Fc=.5
++   Cje=390.1p Mje=.4343 Vje=.75 Tr=235.4n Tf=23.21n Itf=71.33
++   Xtf=5.982 Vtf=10 Rb=.1)
+*$
+*-------------------------------------------------------------------------------
+* Library of insulated gate bipolar transistor (IGBT) model parameters 
+*
+* The parameters in this model library were derived from data sheets.  
+*This part was characterized using the Parts program and the Optimizer program.
+*
+* created using Parts release 6.3 on 12/18/95 at 16:20
+.MODEL IXGH40N60-X NIGBT
+TAU=287.56E-9
+KP=50.034
+AREA=37.500E-6
+AGD=18.750E-6
+VT=4.1822
+KF=.36047
+CGS=31.942E-9
+COXD=53.188E-9
+VTD=2.6570
+*$
